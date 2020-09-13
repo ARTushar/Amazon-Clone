@@ -59,11 +59,12 @@
 
 .header__optionBasket {
     display: flex;
-    justify-content: center;
-    color: white
+    align-items: center;
+    color: white;
 }
 
 .header__basketCount {
     margin-left: 10px;
     margin-right: 10px;
+    color: white;
 }

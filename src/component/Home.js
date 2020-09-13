@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/Home.css';
 import Product from './Product';
 
-function Home() {
+function Home({addToBasket}) {
     return (
         <div className='home'>
             <div className="home__container">

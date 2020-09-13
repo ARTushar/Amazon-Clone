@@ -1,15 +1,20 @@
 import React from 'react';
 import './App.css';
-import Header from './component/Header';
-import Home from './component/Home';
+import Main from './component/Main';
+import {Provider} from 'react-redux';
+import ConfigureStore from './redux/configureStore';
+import { BrowserRouter as Router } from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Home />
-    </div>
-
+    <Provider store={ConfigureStore()}>
+      <Router>
+        <div className='app'>
+          <Main />
+        </div>
+      </Router>
+    </Provider>
   );
 }
 
